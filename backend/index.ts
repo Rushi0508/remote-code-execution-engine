@@ -74,7 +74,7 @@ export const handler = async (
     result = execute_javascript_code(code?.toString() ?? "");
   } else if (language == "java") {
     result = execute_java_code(code?.toString() ?? "");
-  } else if (language == "c++") {
+  } else if (language == "c++" || language == "cpp") {
     result = execute_cpp_code(code?.toString() ?? "");
   } else {
     result = "Language not supported + " + language;
